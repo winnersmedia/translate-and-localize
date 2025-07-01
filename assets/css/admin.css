@@ -1,0 +1,123 @@
+/* Translate and Localize Admin Styles */
+
+/* Metabox Styles */
+#tal_translate_metabox .inside {
+    padding: 12px;
+}
+
+.tal-language-select {
+    margin-bottom: 15px;
+}
+
+.tal-language-select label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.tal-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tal-actions .spinner {
+    margin: 0;
+}
+
+#tal-status-message {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+#tal-status-message.notice-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+#tal-status-message.notice-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+#tal-progress {
+    margin-top: 10px;
+}
+
+.tal-progress-bar {
+    background: linear-gradient(90deg, #0073aa 0%, #00a0d2 100%);
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.tal-progress-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Settings Page Styles */
+.tal-settings-info {
+    margin-top: 30px;
+}
+
+.tal-settings-info h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.tal-settings-info ol,
+.tal-settings-info ul {
+    margin-left: 20px;
+}
+
+.tal-settings-info li {
+    margin-bottom: 8px;
+}
+
+.tal-settings-info code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Queue Status Table */
+.tal-settings-info table {
+    margin-top: 10px;
+}
+
+.tal-settings-info table td:first-child {
+    font-weight: 600;
+}
+
+/* API Key Toggle Button */
+#tal_grok_api_key {
+    margin-right: 5px;
+}
+
+/* Prompt Textarea */
+#tal_default_prompt {
+    font-family: monospace;
+    line-height: 1.5;
+}
+
+/* Row Actions */
+.row-actions .tal_translate {
+    color: #0073aa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .tal-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #tal-translate-button {
+        width: 100%;
+    }
+}
