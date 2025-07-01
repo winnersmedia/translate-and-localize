@@ -175,7 +175,7 @@ class TAL_Queue_Processor {
             $translated_post_data = array(
                 'post_title' => $original_post->post_title,
                 'post_content' => $translated_content,
-                'post_status' => 'draft', // Always create as draft for review
+                'post_status' => $original_post->post_status, // Preserve original post status
                 'post_type' => $original_post->post_type,
                 'post_author' => $original_post->post_author,
                 'post_excerpt' => $original_post->post_excerpt,

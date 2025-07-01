@@ -37,9 +37,9 @@ Are you experiencing these **WordPress translation challenges**?
 
 ### 🎯 Seamless Polylang Integration
 - **One-click translation** from post editor
-- **Automatic language linking** in Polylang
-- **Preserves all metadata** and custom fields
-- **Copies taxonomies** to translated posts
+- **Updates existing posts** with translated content
+- **Preserves post status** (published, draft, etc.)
+- **Maintains all metadata** and custom fields
 
 ### 🛠️ Professional Features
 - **Customizable prompts** for different content types
@@ -115,7 +115,7 @@ Content to translate:
 
 1. **Queued**: Translation added to background queue
 2. **Processing**: Grok API processing the content
-3. **Completed**: New draft post created in target language
+3. **Completed**: Post updated with translated content
 4. **Failed**: Error message displayed (can retry)
 
 ## 🎯 How It Works
@@ -124,8 +124,8 @@ Content to translate:
 2. **Queue translation** to avoid timeouts
 3. **Background processing** via WordPress cron
 4. **Grok AI translates** and localizes content
-5. **Creates draft post** in target language
-6. **Links translations** in Polylang
+5. **Updates existing post** with translated content
+6. **Preserves post status** and metadata
 
 ## 📊 Queue Management
 
@@ -175,12 +175,13 @@ Designed for servers with strict timeout limits:
 
 1. Check Polylang languages are configured
 2. Verify source post has language set
-3. Look for draft posts in target language
+3. Check if post content was actually updated
 4. Check queue for failed items
 
 ## ⚠️ Important Notes
 
-- **Creates draft posts** - review before publishing
+- **Updates existing posts** - replaces content directly
+- **Preserves post status** - published posts stay published
 - **Requires Polylang** - won't work without it
 - **API costs apply** - check xAI pricing
 - **Background processing** - not instant
@@ -188,7 +189,7 @@ Designed for servers with strict timeout limits:
 ## 🐛 Known Limitations
 
 - Only translates `post_content` field
-- Requires manual review of translations
+- Updates posts directly without creating backups
 - API rate limits may apply
 - Depends on WordPress cron reliability
 

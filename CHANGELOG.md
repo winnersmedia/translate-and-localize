@@ -18,7 +18,8 @@ All notable changes to this project will be documented in this file.
 - Auto-selection of post's assigned language as target
 - Support for all public post types
 - HTML formatting preservation in translations
-- Post metadata and taxonomy copying
+- Updates existing posts with translated content (preserves status)
+- Post metadata and taxonomy copying for new translations
 - Queue status dashboard in settings
 - Comprehensive error handling and retry logic
 - Security features including nonce verification
